@@ -1,0 +1,118 @@
+/*---------------------------------*/
+/*---------- header area ----------*/
+/*---------------------------------*/
+.jrnl_header_area {
+  padding: 10px 0px;
+}
+.header_wrapper {
+  padding: 10px;
+  border-radius: 15px;
+  font-family: "Audiowide", sans-serif;
+}
+.header {
+  min-height: 80px;
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  grid-template-columns: 2fr 8fr;
+}
+#menu {
+  transition: 0.3s all ease-in-out;
+  list-style-type: none;
+  position: relative;
+}
+#menu > li {
+  float: left;
+  padding: 15px 0px;
+  border-radius: 1px;
+  transition: 0.3s all ease;
+}
+#menu > li:hover {
+  background-color: #2e86de;
+}
+#menu > li > ul {
+  background-color: rgb(31, 31, 31);
+  position: absolute;
+  opacity: 0;
+  margin-top: 50px;
+  width: 200px;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+#menu > li > ul > li > ul {
+  margin-left: 250px;
+  position: absolute;
+  left: -50px;
+  top: -10px;
+  width: 200px;
+  background-color: #2e86de;
+  opacity: 0 !important;
+}
+#menu > li > ul > li > ul > li {
+  list-style-type: none;
+  padding: 15px;
+  margin-left: -40px;
+  transition: 0.3s all ease-in-out;
+}
+#menu > li > ul > li > ul > li:hover {
+  background-color: black;
+}
+#menu > li > ul > li:hover ul {
+  opacity: 1 !important;
+}
+#menu > li:hover ul {
+  z-index: 1;
+  opacity: 1;
+  margin-top: 10px;
+}
+#menu > li > ul > li {
+  list-style-type: none;
+  position: relative;
+  display: block;
+  margin-left: -40px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 1px;
+  transition: 0.3s all ease;
+}
+#menu > li > ul > li:hover {
+  background-color: #2e86de;
+}
+#menu > li > ul > li > a,
+#menu > li > ul > li > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+#menu > li > a {
+  padding: 15px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+#menu > li > a:hover {
+  color: black;
+  text-decoration: none;
+}
+.logo_wrapper > h1 {
+  font-size: 28px;
+  font-weight: bolder;
+}
+.fa-bars {
+  cursor: pointer;
+  font-size: 25px;
+  display: none;
+}
+
+/* menu position setting */
+#header.center_menu {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+#header.left_side_menu {
+  display: block;
+}
+#header.left_side_menu .menu {
+  float: left;
+}
+#header.left_side_menu .logo_wrapper {
+  float: right;
+}
