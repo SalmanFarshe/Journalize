@@ -7,6 +7,8 @@
         wp_enqueue_style('jrnl_root_stylesheet');
         wp_register_style('jrnl_responsive_stylesheet', get_template_directory_uri().'/css/responsive.css');
         wp_enqueue_style('jrnl_responsive_stylesheet');
+        wp_register_style('jrnl_customiser_stylesheet', get_template_directory_uri().'/css/customiser.css');
+        wp_enqueue_style('jrnl_customiser_stylesheet');
 
         // google fonts
         wp_register_style( 'jrnl_google_fonts', 'https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong');

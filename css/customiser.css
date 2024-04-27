@@ -1,0 +1,14 @@
+/* menu position setting */
+#header.center_menu {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+#header.left_side_menu {
+  display: block;
+}
+#header.left_side_menu .menu {
+  float: left;
+}
+#header.left_side_menu .logo_wrapper {
+  float: right;
+}
