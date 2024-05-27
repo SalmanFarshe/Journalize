@@ -7,7 +7,7 @@
 .header_wrapper {
   padding: 10px;
   border-radius: 15px;
-  font-family: "Audiowide", sans-serif;
+  font-family: "Trirong", serif;
 }
 .header {
   min-height: 80px;
@@ -102,7 +102,9 @@
   display: none;
 }
 
-/* excwrpt */
+/*---------------------------------*/
+/*------------- excerpt -----------*/
+/*---------------------------------*/
 .jrnl_excerpt_more{
   background-color: #2e86de;
   color: #ffffff;
@@ -118,7 +120,81 @@
   color: #ffffff;
 }
 
-/* pagination */
+/*---------------------------------*/
+/*------------ Sidebar ------------*/
+/*---------------------------------*/
+.jrnl_side_bar{
+  background-color: #f9f9f9;
+  padding-top: 15px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 100px -100px #262626;
+  border-radius: 8px;
+  border: 1px solid #26262634;
+}
+.jrnl_side_bar .child_sidebar button[type="submit"]{
+  transition: 0.3s;
+  border-radius: 8px;
+}
+.jrnl_side_bar .child_sidebar input[type="search"]{
+  transition: 0.3s;
+  border-radius: 8px;
+  outline: none;
+}
+.jrnl_side_bar .child_sidebar button[type="submit"]:hover{
+  background-color: #2e86de;
+  color: #ffffff;
+}
+.child_sidebar h2{
+  font-family: "Trirong", serif;
+  margin-top: 25px;
+}
+.child_sidebar ul li a{
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: 10px;
+  color: #2e86de;
+}
+.child_sidebar ul li a:hover{
+  color: #262626;
+}
+.child_sidebar td a{
+  color: #ffffff;
+  background-color: #2e86de;
+  padding: 1px 6px;
+  border-radius: 2px;
+}
+.child_sidebar td a:hover{
+  color: #262626;
+}
+.child_sidebar table caption{
+  color: #ffffff;
+  text-align: center;
+  line-height: 10px;
+  background-color: #2e86de;
+}
+.child_sidebar table thead th{
+  color: #ffffff;
+  background-color: #2e86de;
+}
+.child_sidebar p a{
+  color: #262626;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0px 10px;
+  transition: 0.2s;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+.child_sidebar p a:hover{
+  color: #ffffff;
+  background-color: #2e86de;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/*---------------------------------*/
+/*---------- pagination -----------*/
+/*---------------------------------*/
 .jrnl_pagination{
   padding: 12px 0;
   margin-bottom: 25px;
@@ -141,4 +217,41 @@
 .prev, .next{
   background-color: transparent !important;
   border: 1px solid #2e86de;
+}
+
+/*---------------------------------*/
+/*---------- Footer Area ----------*/
+/*---------------------------------*/
+#footer{
+  border-bottom: 1px solid #f9f9f9;
+}
+#footer .child_sidebar h2{
+  color: #ffffff;
+  border-left: 5px solid #2e86de;
+  padding-left: 15px;
+}
+#footer .child_sidebar p{
+  color: #f9f9f9;
+}
+#footer .child_sidebar ul{
+  list-style-type: none;
+}
+#footer .child_sidebar ul li a{
+  color: #f9f9f9;
+}
+#footer .child_sidebar ul li a:hover{
+  color: #2e86de;
+}
+#footer .child_sidebar ul ul{
+  display: none;
+}
+
+/*---------------------------------*/
+/*---------- Copyright Area -------*/
+/*---------------------------------*/
+.copy_right p{
+  padding-top: 25px;
+  margin: 0;
+  text-align: center;
+  color: #f9f9f9;
 }

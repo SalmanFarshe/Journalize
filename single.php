@@ -21,7 +21,7 @@
                                         </a>
                                     </div>
                                     <div class="jrnl_post_excerpt">
-                                        <?php the_excerpt(); ?>
+                                        <?php the_content(); ?>
                                     </div>
 
                                 </div>    
@@ -31,20 +31,7 @@
                         echo "There Is no post yet!";    
                     endif;
                 ?>
-                <div class="jrnl_pagination">
-                    <?php
-                        global $wp_query;
-                        $big = 10; // need an unlikely integer
-                        echo paginate_links( array(
-                            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ))),
-                            'format' => '?paged=%#%',
-                            'current' => max( 1, get_query_var('paged')),
-                            'total' => $wp_query->max_num_pages,
-                            'prev_text' => __( '< Prev', 'textdomain' ),
-                            'next_text' => __( 'Next >', 'textdomain' ) 
-                        ) );
-                    ?>
-                </div>
+                
             </div>
             <div class="jrnl_side_bar col-md-3 h-100">
                 <?php

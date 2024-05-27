@@ -1,4 +1,6 @@
-/* menu position setting */
+/*----------------------------------*/
+/*---- Menu Position Setting -------*/
+/*----------------------------------*/
 #header.center_menu {
   grid-template-columns: 1fr;
   justify-items: center;

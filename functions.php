@@ -15,4 +15,7 @@
     //menu     
     include_once('incs/menu_register.php');
 
+    //wigets
+    include_once('incs/widgets_register.php');
+
     
