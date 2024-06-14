@@ -2,6 +2,12 @@
     <section class="container">
         <div class="row">
             <div class="jrnl_post_content col-md-9">
+                <div class="search_title">
+                    <?php
+                        printf('Showing result for : ');
+                        the_search_query();
+                    ?>
+                </div>
                 <?php
                     get_template_part( 'template_part/blog_post' )
                 ?>                  

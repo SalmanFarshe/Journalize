@@ -3,6 +3,9 @@
         <div class="row">
             <div class="jrnl_post_content col-md-9">
                 <?php
+                    the_archive_title('<h1 class="archive_title">','</h1>');
+                ?>
+                <?php
                     get_template_part( 'template_part/blog_post' )
                 ?>                  
                 <div class="jrnl_pagination">

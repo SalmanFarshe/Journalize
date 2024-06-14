@@ -255,3 +255,14 @@
   text-align: center;
   color: #f9f9f9;
 }
+/*---------------------------------*/
+/*---------- archive area ---------*/
+/*---------------------------------*/
+.archive_title, .search_title{
+  background-color: #2e86de;
+  color: #f9f9f9;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
