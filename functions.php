@@ -9,8 +9,11 @@
     // custom files
     include_once('incs/files.php');
     
-    // custom files
+    // customizer register
     include_once('incs/customisers_register.php');
+    
+    // custom post
+    include_once('incs/custom_post.php');
     
     //menu     
     include_once('incs/menu_register.php');

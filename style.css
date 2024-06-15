@@ -17,7 +17,7 @@ BackgroundColor: #f0f2f5 (Light Blue-Gray) */
 
 /* ****** common css ******* */
 body {
-  background-color: #f0f2f5 !important;
+  background-color: #f0f2f5;
 }
 img {
   max-width: 100%;

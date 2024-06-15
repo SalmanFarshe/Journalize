@@ -34,5 +34,49 @@
                 'left_side_menu' => 'Left'
             )
         ));
+        
+        //-------------------------------------------------------------------------
+        //-------------------------------------------------------------------------
+        //-------------------------------------------------------------------------
+        // Color Section Register
+        $wp_customize -> add_section('jrnl_site_colors', array(
+            'title'=> __('Update Colors','jrnl'),
+            'description' => 'If you want you can update your colors as you want'
+        ));
+        
+        // background color
+        $wp_customize -> add_setting('jrnl_background_color_setting', array(
+            'default' => '#f9f9f9'
+        ));
+        $wp_customize -> add_control( new WP_Customize_Color_Control($wp_customize, 'jrnl_background_color_setting',array(
+            'label'=> 'Change Background Color',
+            'settings' => 'jrnl_background_color_setting',
+            'section' => 'jrnl_site_colors'
+        )));
+
+        // primary color
+        $wp_customize -> add_setting('jrnl_primary_color_setting', array(
+            'default' => '#2e86de'
+        ));
+        $wp_customize -> add_control( new WP_Customize_Color_Control($wp_customize, 'jrnl_primary_color_setting',array(
+            'label'=> 'Change Primary Color',
+            'settings' => 'jrnl_primary_color_setting',
+            'section' => 'jrnl_site_colors'
+        )));
+        //-------------------------------------------------------------------------
+        //-------------------------------------------------------------------------
+        //-------------------------------------------------------------------------
     }
     add_action( 'customize_register', 'jrnl_register_customisers' );
+    
+    function jrnl_theme_colors_func(){
+        ?>
+            <style>
+                :root{
+                    --primary-color: <?php echo get_theme_mod( 'jrnl_primary_color_setting' ); ?>;
+                    --bg-color: <?php echo get_theme_mod( 'jrnl_background_color_setting' ); ?>;
+                }
+            </style>
+        <?php
+    }
+    add_action( 'wp_head', 'jrnl_theme_colors_func' );

@@ -28,7 +28,7 @@
   transition: 0.3s all ease;
 }
 #menu > li:hover {
-  background-color: #2e86de;
+  background-color: var(--primary-color);
 }
 #menu > li > ul {
   background-color: rgb(31, 31, 31);
@@ -45,7 +45,7 @@
   left: -50px;
   top: -10px;
   width: 200px;
-  background-color: #2e86de;
+  background-color: var(--primary-color);
   opacity: 0 !important;
 }
 #menu > li > ul > li > ul > li {
@@ -76,7 +76,7 @@
   transition: 0.3s all ease;
 }
 #menu > li > ul > li:hover {
-  background-color: #2e86de;
+  background-color: var(--primary-color);
 }
 #menu > li > ul > li > a,
 #menu > li > ul > li > ul > li > a {
@@ -106,7 +106,7 @@
 /*------------- excerpt -----------*/
 /*---------------------------------*/
 .jrnl_excerpt_more{
-  background-color: #2e86de;
+  background-color: var(--primary-color);
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 3px;
@@ -141,7 +141,7 @@
   outline: none;
 }
 .jrnl_side_bar .child_sidebar button[type="submit"]:hover{
-  background-color: #2e86de;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 .child_sidebar h2{
@@ -152,14 +152,14 @@
   text-decoration: none;
   transition: 0.3s;
   margin-left: 10px;
-  color: #2e86de;
+  color: var(--primary-color);
 }
 .child_sidebar ul li a:hover{
   color: #262626;
 }
 .child_sidebar td a{
   color: #ffffff;
-  background-color: #2e86de;
+  background-color: var(--primary-color);
   padding: 1px 6px;
   border-radius: 2px;
 }
@@ -170,11 +170,11 @@
   color: #ffffff;
   text-align: center;
   line-height: 10px;
-  background-color: #2e86de;
+  background-color: var(--primary-color);
 }
 .child_sidebar table thead th{
   color: #ffffff;
-  background-color: #2e86de;
+  background-color: var(--primary-color);
 }
 .child_sidebar p a{
   color: #262626;
@@ -187,7 +187,7 @@
 }
 .child_sidebar p a:hover{
   color: #ffffff;
-  background-color: #2e86de;
+  background-color: var(--primary-color);
   border-radius: 5px;
   text-decoration: none;
 }
@@ -201,9 +201,9 @@
 }
 .jrnl_pagination .page-numbers{
   color: #000000;
-  background-color: #2e86de;
+  background-color: var(--primary-color);
   padding: 10px;
-  border: 1px solid #2e86de;
+  border: 1px solid var(--primary-color);
   transition: 0.3s;
 }
 .jrnl_pagination .page-numbers:hover{
@@ -216,7 +216,7 @@
 }
 .prev, .next{
   background-color: transparent !important;
-  border: 1px solid #2e86de;
+  border: 1px solid var(--primary-color);
 }
 
 /*---------------------------------*/
@@ -227,7 +227,7 @@
 }
 #footer .child_sidebar h2{
   color: #ffffff;
-  border-left: 5px solid #2e86de;
+  border-left: 5px solid var(--primary-color);
   padding-left: 15px;
 }
 #footer .child_sidebar p{
@@ -240,7 +240,7 @@
   color: #f9f9f9;
 }
 #footer .child_sidebar ul li a:hover{
-  color: #2e86de;
+  color: var(--primary-color);
 }
 #footer .child_sidebar ul ul{
   display: none;
@@ -259,7 +259,7 @@
 /*---------- archive area ---------*/
 /*---------------------------------*/
 .archive_title, .search_title{
-  background-color: #2e86de;
+  background-color: var(--primary-color);
   color: #f9f9f9;
   padding: 10px 0;
   font-weight: bold;
